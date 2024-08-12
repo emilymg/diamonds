@@ -1,0 +1,28 @@
+---
+title: "diamonds"
+author: "Emily Galvin"
+date: "2024-08-12"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(ggplot2)
+
+data <- diamonds
+```
+
+```{r}
+p <- ggplot(diamonds, aes(carat, price))
+
+p + geom_point(aes(size = carat, alpha = 0.4))
+```
+
+```{r}
+Sys.Date()
+Sys.time()
+```
+
