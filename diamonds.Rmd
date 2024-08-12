@@ -20,7 +20,7 @@ p <- ggplot(diamonds, aes(carat, price))
 
 p + geom_point(aes(size = carat, alpha = 0.4))
 ```
-
+**Note:** change master to main
 ```{r}
 Sys.Date()
 Sys.time()
